@@ -14,6 +14,10 @@ font-family: 'Poppins', sans-serif;
     border-bottom: solid black 1px;
     gap:10px;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
     
 }
 .navbar__s1__title{
@@ -33,6 +37,7 @@ font-family: 'Poppins', sans-serif;
     font-size: 16px;
     border: none;
     align-items: center;
+    background-color: transparent;
 }
 .navbar__search input:focus{
     outline: none;
@@ -42,6 +47,25 @@ font-family: 'Poppins', sans-serif;
     gap:10px;
     align-items: center;
 }
+/*My learning popup*/
+.mylearning{
+    position: relative;
+    cursor: pointer;
+}
+.mylearning__popup{
+    position: absolute;
+    background-color: white;
+    border: solid black 1px;
+    width: 100px;
+    top: 150%;
+    padding: 20px;
+    right: 0;
+    display: none;
+}
+.mylearning:hover .mylearning__popup{
+    display: block;
+}
+
 .categories{
     display: flex;
     padding: 10px;
@@ -53,6 +77,19 @@ font-family: 'Poppins', sans-serif;
     color: white;
     padding: 10px;
     border-radius: 30px;
+}
+.saleimage{
+   
+    position: relative;
+}
+.saleimage__offer{
+    width: 35%;
+    border: solid black 2px;
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
 }
 .recommended{
     margin-top: 10px;
