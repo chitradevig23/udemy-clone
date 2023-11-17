@@ -47,6 +47,9 @@ font-family: 'Poppins', sans-serif;
     gap:10px;
     align-items: center;
 }
+.navbar__menubar{
+    display: none;
+}
 /*My learning popup*/
 .mylearning{
     position: relative;
@@ -87,6 +90,9 @@ font-family: 'Poppins', sans-serif;
     border: solid #A435F0 1px;
     
 }
+.saleimage img{
+    width: 100%;
+}
 .saleimage{
    position: relative;
    margin-top: 10px;
@@ -126,7 +132,9 @@ flex-wrap: wrap;
 justify-content: space-between;
 }
 .course_card{
-    width: 300px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
 }
 .course_card img{
     width: 100%;
@@ -173,5 +181,27 @@ justify-content: space-between;
     align-items: center;
     display: flex;
     justify-content:space-between;
+}
+/*Media queries*/
+@media screen and (max-width:800px){
+    body{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:600px){
+    .course_card{
+        flex-basis:40%;
+    }
+    .categories{
+        display: none;
+    }
+    .navbar__search,.navbar__icons{
+        display: none ;
+    }
+    .navbar__menubar{
+        display: block;
+    }
+    
+    
 }
 
